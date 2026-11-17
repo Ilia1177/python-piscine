@@ -10,8 +10,7 @@ A sample Python package, built with `setuptools` and installable with `pip`.
 - build a source archive (`.tar.gz`) and a wheel (`.whl`),
 - install the result with `pip`.
 
-The package exposes a single helper function, `count_in_list`
-(replace this with what your module really provides).
+The package exposes a single dumb function, `greet`.
 
 ## Project structure
 
