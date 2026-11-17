@@ -5,7 +5,7 @@ from ft_filter import ft_filter
 def main():
     try:
         assert len(sys.argv) == 3, "wrong number of arguments."
-        assert sys.argv[2].lstrip('-').isdigit(), "must be an integer"
+        assert sys.argv[2].lstrip('-').isdigit(), "Bad arguments"
     except AssertionError as e:
         print(f"AssertionError: {e}")
         sys.exit(1)

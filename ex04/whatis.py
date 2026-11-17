@@ -2,6 +2,7 @@ import sys
 
 
 def whatis(a) -> None:
+    """Print whether the integer a is odd or even."""
     if a % 2 == 0:
         print("I'm even.")
     else:
@@ -10,7 +11,8 @@ def whatis(a) -> None:
 
 if __name__ == "__main__":
     try:
-        assert len(sys.argv) == 2, "more than one argument is provided"
+        if len(sys.argv) != 2:
+            raise AssertionError("exactly one argument is requiered")
         a = int(sys.argv[1])
         whatis(a)
     except ValueError:

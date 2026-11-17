@@ -6,3 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ft_package"
 version = "0.0.1"
 description = "A sample Python package"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "nil", email = "nil@example.com" }]
+license = { file = "LICENSE" }
