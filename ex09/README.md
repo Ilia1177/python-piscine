@@ -66,9 +66,9 @@ pip install -e .
 ## Usage
 
 ```python
-from ft_package import count_in_list
+from ft_package import greet
 
-print(count_in_list(["toto", "tata", "toto"], "toto"))  # 2
+greet("your name -- super -- try test")
 ```
 
 Check that the package is installed:
