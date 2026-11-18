@@ -3,6 +3,7 @@ from ft_filter import ft_filter
 
 
 def main():
+    """Program to apply that return words of len superior of second args"""
     try:
         assert len(sys.argv) == 3, "wrong number of arguments."
         assert sys.argv[2].lstrip('-').isdigit(), "Bad arguments"

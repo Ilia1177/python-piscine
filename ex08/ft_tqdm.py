@@ -2,17 +2,22 @@ import os
 
 
 def f_time(s):
+    """Format time."""
     m = int(s) // 60
     sec = int(s) % 60
     return f"{m:02d}:{sec:02d}"
 
 
 def ft_tqdm(iterable):
-    width = os.get_terminal_size().columns
+    """Mimic the python tqdm builtin function."""
     total = len(iterable)
     last_update = 0
+    try:
+        width = os.get_terminal_size().columns
+    except OSError:
+        width = 80
     start = os.times().elapsed
-    for i, elem in enumerate(iterable,  start=1):
+    for i, elem in enumerate(iterable, start=1):
         now = os.times().elapsed
         if now - last_update > 0.1 or i == total:
             elapsed = now - start

@@ -19,10 +19,11 @@ def building(s):
 
 
 def main():
+    """Program to count characters in argument"""
     try:
         if len(sys.argv) > 2:
             raise AssertionError("Only one argument should be provided")
-        elif len(sys.argv) == 1:
+        elif len(sys.argv) == 1 or sys.argv[1] == "":
             print("What is the text to count?")
             s = sys.stdin.read()
             building(s)

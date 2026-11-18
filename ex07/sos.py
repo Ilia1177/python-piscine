@@ -2,6 +2,7 @@ import sys
 
 
 def main():
+    """Progran to translate characters in morse code."""
     NESTED_MORSE = {
         " ": "/",
         "A": ".-",
