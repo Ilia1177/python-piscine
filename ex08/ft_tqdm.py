@@ -2,12 +2,16 @@ import os
 
 
 def f_time(s):
+    """format the time"""
     m = int(s) // 60
     sec = int(s) % 60
     return f"{m:02d}:{sec:02d}"
 
 
 def ft_tqdm(iterable):
+    """Decorate an iterable object, returning an iterator which acts exactly
+    like the original iterable, but prints a dynamically updating
+    progressbar every time a value is requested."""
     width = os.get_terminal_size().columns
     total = len(iterable)
     last_update = 0

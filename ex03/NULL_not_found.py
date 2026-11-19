@@ -1,8 +1,11 @@
-def NULL_not_found(object) -> int:
-    if type(object) is type(None):
+from typing import Any
+
+
+def NULL_not_found(object: Any) -> int:
+    if object is None:
         print(f"Nothing: {object} <class '{type(object).__name__}'>")
         return 0
-    elif str(object) == "nan" and type(object) is float:
+    elif isinstance(object, float) and object != object:
         print(f"Cheese: {object} <class '{type(object).__name__}'>")
         return 0
     elif type(object) is int and object == 0:

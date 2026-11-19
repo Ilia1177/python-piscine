@@ -3,6 +3,7 @@ from ft_filter import ft_filter
 
 
 def main():
+    """Program that return words in arg 1 longer than N of arg 2"""
     try:
         assert len(sys.argv) == 3, "wrong number of arguments."
         assert sys.argv[2].lstrip('-').isdigit(), "Bad arguments"

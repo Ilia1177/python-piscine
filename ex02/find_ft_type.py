@@ -1,4 +1,7 @@
-def all_thing_is_obj(object: any) -> int:
+from typing import Any
+
+
+def all_thing_is_obj(object: Any) -> int:
     if type(object) is str:
         print(f"{object} is in the kitchen : {type(object)}")
     elif type(object) is int:
