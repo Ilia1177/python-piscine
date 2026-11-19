@@ -1,6 +1,3 @@
-from give_bmi import give_bmi, apply_limit
-height = [2.71, 1.15]
-weight = [165.3, 38.4]
-bmi = give_bmi(height, weight)
-print(bmi, type(bmi))
-print(apply_limit(bmi, 26))
+from load_csv import load
+print(load("../life_expectancy_years.csv"))
+print(load("../income_per_person_gdppercapita_ppp_inflation_adjusted.csv"))
