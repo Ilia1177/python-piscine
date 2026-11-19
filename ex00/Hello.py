@@ -1,6 +1,6 @@
-ft_list = ["Hello", "tata!"]
+ft_list = ["Hello"]
 ft_tuple = ("Hello", "toto!")
-ft_set = {"Hello", "tutu!"}
+ft_set = {"Hello", "Hello", "tutu!"}
 ft_dict = {"Hello": "titi!"}
 
 ft_list.append("World!")

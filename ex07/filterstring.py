@@ -1,9 +1,8 @@
 import sys
-from ft_filter import ft_filter
 
 
 def main():
-    """Program that return words in arg 1 longer than N of arg 2"""
+    """Program that return words in arg 1 longer than arg 2"""
     try:
         assert len(sys.argv) == 3, "wrong number of arguments."
         assert sys.argv[2].lstrip('-').isdigit(), "Bad arguments"
@@ -13,7 +12,7 @@ def main():
     n = int(sys.argv[2])
     s = sys.argv[1]
     words = [w for w in s.split()]
-    result = list(ft_filter(lambda word: len(word) > n, words))
+    result = [w for w in words if len(w) > n]
     print(result)
 
 

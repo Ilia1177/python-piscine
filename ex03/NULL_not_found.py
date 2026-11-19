@@ -12,7 +12,7 @@ def NULL_not_found(object: Any) -> int:
         print(f"Zero: {object} <class '{type(object).__name__}'>")
         return 0
     elif object == "":
-        print(f"Empty: {object} <class '{type(object).__name__}'>")
+        print(f"Empty: <class '{type(object).__name__}'>")
         return 0
     elif object is False:
         print(f"Fake: {object} <class '{type(object).__name__}'>")
